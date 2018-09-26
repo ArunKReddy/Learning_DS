@@ -33,8 +33,7 @@ inventory.update({'pocket' : ['seashell', 'strange berry', 'lint']})
 
 print(inventory)
 
-print(inventory['backpack'])
 
-print(inventory['backpack'].values)
+
 
 
