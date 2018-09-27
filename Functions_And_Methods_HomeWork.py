@@ -1,3 +1,4 @@
+# @ Maddy : Completed all the assignments in this section.
 # 1.Write a function that computes the volume of a sphere given its radius.
 
 def vol(rad):
@@ -62,4 +63,35 @@ print(unique_list(l))
 sample_list = [1, 2, 3, 4]
 
 def multiply_numbers(sample_list):
-    pass
+    result = 1
+    for x in sample_list:
+        result = result * x
+    return result
+
+
+print("Result after multiply each elements in the list : ", multiply_numbers(sample_list))
+
+# 7. Write a Python function that checks whether a passed string is palindrome or not.
+
+s = "helleh"
+s1 = s[::-1]
+
+if s == s1:
+    print("The given word is Palindrome : " + s)
+else:
+    print(s + " : Word is not Palindrome")
+
+# 8. Write a Python function to check whether a string is pangram or not.
+s2 = 'The quick brown fox jumps over the lazy dog'
+
+def ispangram(s2):
+    inputstring = s2.lower()
+    pangramstring = set(inputstring)
+    alpha = [ch for ch in pangramstring if ord(ch) in range(ord('a'), ord('z')+1)]
+
+    if len(alpha) == 26:
+        return True
+    else:
+        return False
+
+print("The Given string is : ", ispangram(s2))
