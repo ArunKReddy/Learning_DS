@@ -14,3 +14,4 @@ print("Using lambda Expression, Finding the greatest number in the list : ", fun
 
 # To multiply the list.
 print("Using Operator, multiply the list : ", functools.reduce(operator.mul, lst))
+

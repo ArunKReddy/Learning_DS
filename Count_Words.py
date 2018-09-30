@@ -20,3 +20,6 @@ print(d)
 # Method 2: Using sets.
 s = {y : a.count(y) for y in set(a)}
 print(s)
+
+l = {z : a.count(z) for z in list(a)}
+print(l)
