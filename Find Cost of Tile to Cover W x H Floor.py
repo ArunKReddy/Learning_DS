@@ -6,3 +6,4 @@ def ask(cost, width, height):
 
 print("Cost of the floor : ", ask(2, 3, 5))
 
+    
